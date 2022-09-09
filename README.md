@@ -11,21 +11,63 @@
 - Middlewares
 - Static Vs Singleton
 - Design patterns
+- Where to check Http Headers before Action method? 
+  - We can do it in middlewares and extract headers from Request.
 - Ado. net (Open Connection/ closed connection)
 - How to create NuGet Package locally?
-   _Create a class libary project, Add a new Package source by giving the path of nupkg file in Tools and Features Nuget Package Manager. Then in Properties just          enter details of Package along with version, build the project and just Pack it. And share it on a shared folder so everyone can access it. So everyone witll have      to include the package source on their machine via Tools and Features and while Managing nuget packages just select our package source and everyone will be able        to access it.
-- Run Code Analysis - It is just to get some warnings in our code and optimize it
-- SONAR Qube - It is also to find some warnings in code and keep a check on quality of code. run.bat is used to run SONAR.
+  - Create a class libary project, Add a new Package source by giving the path of nupkg file in Tools and Features Nuget Package Manager. Then in Properties just          enter details of Package along with version, build the project and just Pack it. And share it on a shared folder so everyone can access it. So everyone witll have      to include the package source on their machine via Tools and Features and while Managing nuget packages just select our package source and everyone will be able        to access it.
+- Run Code Analysis
+  - It is just to get some warnings in our code and optimize it
+- SONAR Qube 
+  - It is also to find some warnings in code and keep a check on quality of code. run.bat is used to run SONAR.
 - Reflection in C#
+- Access Modifiers in C#
 - Start to end UI to DB call
 - What is Unit testing
 - Authentication & Authorization
-    Authentication(validating credentials)
-    Authorization(Checking permissions for a user)
-    JWT is an open standard for securely transmitting info as a JSON obj. JWT token consists of Header, Payload, Signature.
+  - Authentication(validating credentials)
+  - Authorization(Checking permissions for a user)
+  - JWT is an open standard for securely transmitting info as a JSON obj. JWT token consists of Header, Payload, Signature.
 - Rest Vs SOAP
 - Diff bet Single & SingleOrDefault, First & FirstOrDefault 
-- List all LINQ functions -> Single & SingleOrDefault, First & FirstOrDefault 
+  - Single cannot handle null it will throw exception whereas SingleOrDefault will handle null.
+- List all LINQ functions
+  - Single & SingleOrDefault, First, FirstOrDefault, Take, TakeUntil, Skip, Select, Where, OrderBy, ThenBy, All, Any, Contains, Count, Sum, Max, Min etc.
+- Types of EF
+  - Code First 
+  - Database First 
+- EF Commands 
+  - enable migrations
+  - add migrations 
+  - remove migrations (removes previous migrations)
+  - update database 
+  - script migration (creates SQL script from Migrations)
+  - Drop-Database 
+- What methods we have in Migration Class
+  - Up and Down methods
+- SP in EF 
+  - DbSet<TEntity>.FromSql(), DbContext.Database.ExecuteSqlCommand()
+- Entity State 
+  - Added, Modified, Deleted, Unchanged, Detached
+- Transient, Scoped & Singleton
+- 
+
+
+
+
+# SQL 
+- SQL Injection
+- How to improve SQL performance?
+  - We can implement DB reflection i.e, Master Slave DB structure or DB Sharding or Inmemory/Cache DB structure
+  - Avoid using OR Conditions & Use No lock 
+  - Use Indexing 
+- Indexes (Use sysIndexes table from System for Index info)
+  - Clustered - There can be only 1 CI on a table over Primary key by default.The values are stored on B-Tree in a sorted manner
+  - Non-Clustered - There can be max 999 NCI on a table, they can be on single column or on multiple columns. Memory address of values are stored in B-Tree hence, the     values are not sorted. 
+- SP Vs Func 
+- Group by, having clause
+- ACID properties
+
 
 
 
