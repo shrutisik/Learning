@@ -10,12 +10,12 @@
 - Abstract Vs Interfaces
 - Middlewares
 - Static Vs Singleton
-- Design patterns
+- Design patterns(Factory, Adaptor, Singleton, Inversion of control, composite, strategy)
 - Where to check Http Headers before Action method? 
   - We can do it in middlewares and extract headers from Request.
 - Ado. net (Open Connection/ closed connection)
 - Diff between const and readonnly 
-  - 
+- Test driven & behavior driven
 - How to create NuGet Package locally?
   - Create a class libary project, Add a new Package source by giving the path of nupkg file in Tools and Features Nuget Package Manager. Then in Properties just          enter details of Package along with version, build the project and just Pack it. And share it on a shared folder so everyone can access it. So everyone witll have      to include the package source on their machine via Tools and Features and while Managing nuget packages just select our package source and everyone will be able        to access it.
 - Run Code Analysis
@@ -63,6 +63,13 @@
 - LINQ queries
 - Automapper in C#
 - ICollection in C#
+- IEnumerable Vs IQueryable
+- Multi-Threading in C#
+- Async Await in C#
+- IOC, DI
+- Delegates
+- Lambda
+- Advantages of REST
   
 
 
@@ -142,7 +149,13 @@
 - Session, local & Storage types
 - Diff between == & ===
 - Directives in angular
--
+- Event loop in JS
+- Closure
+- Decorators in angular
+- ElementREf, @Hostbinding, @Hostlistener?
+- Child to Parent & Parent to child data transfer
+- Event emitters
+- @Injectable
 
 
 # Azure
@@ -152,4 +165,4 @@
 - What resources gets created when VM is created?
 - How can we set expiration of blob?
 - How to give access to people of blob?
-- 
+- CICD
